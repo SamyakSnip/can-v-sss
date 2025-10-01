@@ -29,19 +29,19 @@ export default function Dashboard() {
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">{workspace.description}</p>
               <div className="flex justify-end">
-                <span className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300">
-                  Enter Workspace →
-                </span>
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm font-medium transition-colors">
+                  Open
+                </button>
               </div>
             </Link>
           ))}
         </div>
-        <div className="mt-8 text-center">
+        <div className="fixed bottom-6 right-6 z-10">
           <Link
             href="/workspace/new"
-            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors"
+            className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors"
           >
-            Create New Workspace
+            +
           </Link>
         </div>
       </div>

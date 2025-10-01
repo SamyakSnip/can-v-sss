@@ -19,12 +19,6 @@ export default function Workspace({ params }: WorkspaceParams) {
         </div>
         <nav className="mt-6 px-3 space-y-2">
           <Link
-            href={`/workspace/${id}`}
-            className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
-          >
-            <span className="ml-3">Overview</span>
-          </Link>
-          <Link
             href={`/whiteboard/${id}`}
             className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
           >
@@ -34,7 +28,7 @@ export default function Workspace({ params }: WorkspaceParams) {
             href={`/tasks/${id}`}
             className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
           >
-            <span className="ml-3">Task Board</span>
+            <span className="ml-3">Tasks</span>
           </Link>
           <Link
             href={`/chat/${id}`}
@@ -48,20 +42,24 @@ export default function Workspace({ params }: WorkspaceParams) {
           >
             <span className="ml-3">Files</span>
           </Link>
-          <div className="border-t border-gray-200 dark:border-gray-700 mt-6 pt-6">
-            <Link
-              href={`/video/${id}`}
-              className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
-            >
-              <span className="ml-3">Video Call</span>
-            </Link>
-            <Link
-              href={`/members/${id}`}
-              className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
-            >
-              <span className="ml-3">Members</span>
-            </Link>
-          </div>
+          <Link
+            href={`/notifications`}
+            className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+          >
+            <span className="ml-3">Notifications</span>
+          </Link>
+          <Link
+            href={`/analytics`}
+            className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+          >
+            <span className="ml-3">Analytics</span>
+          </Link>
+          <Link
+            href={`/settings`}
+            className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
+          >
+            <span className="ml-3">Settings</span>
+          </Link>
         </nav>
       </div>
 
@@ -69,9 +67,9 @@ export default function Workspace({ params }: WorkspaceParams) {
       <div className="flex-1 p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Whiteboard Placeholder */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 col-span-full md:col-span-2 lg:col-span-3">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Whiteboard</h3>
-            <div className="h-48 bg-gray-200 dark:bg-gray-700 rounded-md flex items-center justify-center">
+            <div className="h-96 bg-gray-200 dark:bg-gray-700 rounded-md flex items-center justify-center">
               <span className="text-gray-500 dark:text-gray-400">Whiteboard goes here</span>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Interactive canvas for brainstorming and drawing.</p>
@@ -88,7 +86,7 @@ export default function Workspace({ params }: WorkspaceParams) {
 
           {/* Chat Placeholder */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Chat</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Chat Panel</h3>
             <div className="h-48 bg-gray-200 dark:bg-gray-700 rounded-md flex items-center justify-center">
               <span className="text-gray-500 dark:text-gray-400">Chat interface goes here</span>
             </div>
@@ -97,7 +95,7 @@ export default function Workspace({ params }: WorkspaceParams) {
 
           {/* Video Call Placeholder */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 md:col-span-2 lg:col-span-1">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Video Call</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Video Call Block</h3>
             <div className="h-48 bg-gray-200 dark:bg-gray-700 rounded-md flex items-center justify-center">
               <span className="text-gray-500 dark:text-gray-400">Video call placeholder</span>
             </div>
@@ -106,7 +104,7 @@ export default function Workspace({ params }: WorkspaceParams) {
 
           {/* Members Panel */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 md:col-span-2 lg:col-span-3">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Members Panel</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Member List</h3>
             <div className="h-48 bg-gray-200 dark:bg-gray-700 rounded-md flex items-center justify-center">
               <span className="text-gray-500 dark:text-gray-400">Members list goes here</span>
             </div>
