@@ -62,7 +62,7 @@ export default function Login() {
           <div className="mt-6 grid grid-cols-2 gap-3">
             <button className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-700 text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
               <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" aria-hidden="true">
-                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor" />
+                <path fill="currentColor" d="M7 11v2.4h3.97c-.16 1-1.15 3.33-3.97 3.33-2.38 0-4.32-1.97-4.32-4.41s1.94-4.41 4.32-4.41c1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.1-1.03-2.5-1.66-4.69-1.66-3.84 0-7 3.14-7 7s3.16 7 7 7c4.03 0 6.71-2.81 6.71-6.85 0-.77-.11-1.31-.25-1.93l-6.45.01z" />
               </svg>
               Google
             </button>
@@ -76,9 +76,9 @@ export default function Login() {
         </div>
 
         <div className="mt-6 text-center">
-          <Link href="/dashboard" className="text-sm text-blue-600 hover:text-blue-500">
-            Skip and go to Dashboard
-          </Link>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            Don’t have an account? <span className="font-medium text-blue-600 hover:text-blue-500">Sign up</span>
+          </p>
         </div>
       </div>
     </div>
