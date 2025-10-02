@@ -54,7 +54,7 @@ export default function Billing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Choose Your Plan</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">Select the perfect plan for your team's needs</p>
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">Select the perfect plan for your team&#39;s needs</p>
           <div className="flex justify-center space-x-4">
             <label className="flex items-center">
               <input type="radio" name="billing" className="mr-2" defaultChecked />
